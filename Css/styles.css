@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+/* 
+    Top Part of Page
+     Nav and Header
+*/
+
+.page-header nav.navbar{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+}
+nav.navbar ul.navList{
+    display: flex;
+}
+ul.navList li{
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+h1.MainPageHeading{
+    cursor: default;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: auto;
+}
+
+
+/* 
+    Section Part 
+*/
+
+section div.Container{
+    margin: 55px;
+    width: 80%;
+}
+h2.SectionHeading{
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 70px;
+
+}
+p.Text{
+    text-indent: 60px;
+}
+li:hover , li.active {
+    background-color: #383838;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+section.active{
+    background-color: #cdcdcd;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    transition: 0.8s;
+}
+
+
+/* 
+    Footer Part
+*/
+
+footer div{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: default;
+    margin-top: 150px;
+}
+
+
+
+/* 
+    Responsive Design 
+*/
+@media(max-width: 767px){
+    body{
+        margin: 0 ;
+    }
+
+    nav.navbar ul.navList{
+        padding: 0;
+        align-items: center;
+        margin: 0;
+        }
+
+    section div.Container{
+        margin: 20px;
+    }
+
+
+}
